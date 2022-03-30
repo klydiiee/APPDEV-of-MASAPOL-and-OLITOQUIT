@@ -1,3 +1,7 @@
+<?php
+include 'connect.php';
+include 'head2.php';
+?>
 <html>
 <head>
  <link rel='stylesheet' href='index.css'>
@@ -19,3 +23,15 @@
 <div align="center" >
 <h3><a href='register.php' style="color: black"><b>Register</b></a></h3>
 <br>
+
+</div>
+
+</table>
+</form>
+<center><h3><a href='adminindex.php' style="color: black"><b>Admin</b></a></h3></center>
+
+</body style="background-color: F5F1F0;">
+<?php include 'footer.php';
+?> 
+
+</html>
