@@ -25,3 +25,38 @@ table#database_table {
     color: white;
 }
 </style>
+
+
+<head>  
+           <title>KL TICKET DATABASE</title>  
+           <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>  
+           <script src="https://cdn.datatables.net/1.10.12/js/dataTables.bootstrap.min.js"></script>            
+           <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" />  
+      </head>  
+      <body >  
+                     <h2><center><b><img src="https://img.icons8.com/officel/70/000000/overtime.png"/>&nbsp&nbspTRAIN SCHEDULE&nbsp&nbsp<img src="https://img.icons8.com/officel/70/000000/overtime.png"/></center></b></h2>
+
+           <div class="container">  
+                <br />  
+                     <table id="database_table" class="table table-striped table-bordered">  
+                          <thead>  
+                            <tr>
+  <th>Libmanan</th>
+  <th>Tagkawayan</th>
+  <th>Sipocot</th>
+  <th>San Fernando</th>
+  <th>Milaor</th>
+  <th>Gainza</th>
+  <th>Naga Centro</th>
+  <th>Calauag</th>
+  <th>Con Peq</th>
+  <th>Lerma</th>
+  <th>Abella</th>
+  <th>UNC </th>
+  <th>NCF</th>
+  <th>USI</th>
+
+
+  </tr>  
+                          </thead>  
+                          <tbody>
