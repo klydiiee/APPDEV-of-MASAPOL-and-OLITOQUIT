@@ -11,7 +11,7 @@ include 'head2.php';
 </head>
 <div><center><img src="https://img.icons8.com/bubbles/300/000000/user.png"/></center></div>
 
-<h2><center><b>Sign In</center></b></h2>
+
 <body style="background-color: F5F1F0;">
 <form method='post' action ='authenticate.php'  >
 <div>
