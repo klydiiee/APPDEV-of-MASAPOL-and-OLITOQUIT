@@ -1,4 +1,14 @@
- <div>
+<?php
+include 'connect.php' ;
+session_start();
+if ($_SESSION['log'] == '')
+{
+    header("location:sindex.php");
+}
+include 'header.php';
+?>
+
+  <div>
 
   </div>
 <style>
@@ -24,6 +34,8 @@ table#database_table {
     background-color: black;
     color: white;
 }
+
+
 </style>
 
 
@@ -60,3 +72,48 @@ table#database_table {
   </tr>  
                           </thead>  
                           <tbody>
+
+
+
+<?php
+
+
+$sql_transactions="SELECT * FROM `traintt`   " ;
+$result = $connect->query($sql_transactions);
+while($row = $result->fetch_assoc()){
+
+echo'<tr class="class="table table-striped table-bordered"">
+        <td>'.$row["Panvel"].'</td>
+        <td>'.$row["Khandeshwar"].'</td>
+        <td>'.$row["Manasarovar"].'</td>
+        <td>'.$row["Kharghar"].'</td>
+        <td>'.$row["Belapur CBD"].'</td>
+        <td>'.$row["Seawood Darave"].'</td>
+        <td>'.$row["Nerul"].'</td>
+        <td>'.$row["Juinagar"].'</td>
+        <td>'.$row["Turbhe"].'</td>
+        <td>'.$row["Koparkhairne"].'</td>
+        <td>'.$row["Ghansoli"].'</td>
+        <td>'.$row["Rabale"].'</td>
+        <td>'.$row["Airoli"].'</td>
+        <td>'.$row["Thane"].'</td>
+
+
+       
+       
+
+';
+}
+?>
+</tbody>
+</table>
+</div>
+ <script>  
+ $(document).ready(function() {
+    $('#database_table').DataTable( {
+        "order": [[ 1, "asc" ]]
+    } );
+} ); 
+ </script>  
+<?php include 'footer.php';
+?> 
