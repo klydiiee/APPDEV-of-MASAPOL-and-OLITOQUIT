@@ -1,9 +1,12 @@
-<?php
-include 'connect.php' ;
-session_start();
-if ($_SESSION['log'] == '')
-{
-    header("location:sindex.php");
+ <div>
+
+  </div>
+<style>
+
+table#database_table {
+    font-size:16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-include 'header.php';
-?>
+</style>
