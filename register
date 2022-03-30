@@ -1,3 +1,13 @@
+<!--Registration Page-->
+
+
+<?php     
+include 'connect.php';                           
+include 'head2.php'
+?>
+
+
+
 <html>
 <head>
  <style >  .table{  font-family: Montserrat, sans-serif;}
@@ -28,5 +38,9 @@
 </div>
 </body style="background-color: F5F1F0;">
 
+
+
+<?php include 'footer.php';
+?> 
 
 </html>
